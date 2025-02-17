@@ -1,0 +1,9 @@
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="vfAEy9IQLvZSx5dTPx4B")
+project = rf.workspace("roboflow-test-xh4ve").project("test-face-human")
+version = project.version(1)
+dataset = version.download("yolov8")
+
+#DATA YOLO v8 For Human 
